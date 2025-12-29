@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>液晶物理 - 应用物理学习笔记</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/note.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="note-nav">
+        <div class="container">
+            <a href="../index.html" class="nav-home">← 返回首页</a>
+            <h1 class="nav-title">液晶物理</h1>
+        </div>
+    </nav>
+
+    <!-- 笔记内容 -->
+    <main class="note-content">
+        <div class="container">
+            <!-- 科目介绍 -->
+            <section class="note-intro">
+                <h2>课程简介</h2>
+                <p>液晶物理是研究液晶材料的结构、性质和应用的基础课程。液晶是介于各向异性晶体和各向同性液体之间的中间相，具有液体的流动性和晶体的各向异性。本课程主要学习液晶的分类、序参数、Freedericks转变、Frank弹性理论等内容。</p>
+            </section>
+
+            <!-- 下载链接区域 -->
+            <section class="download-section">
+                <h2>笔记下载</h2>
+                <div class="download-links">
+                    <a href="笔记/液晶物理总结（差一页）.pdf" class="download-link" download>
+                        <div class="download-link-icon">📄</div>
+                        <div class="download-link-content">
+                            <div class="download-link-title">液晶物理总结（差一页）</div>
+                            <div class="download-link-desc">液晶物理知识点总结PDF文档</div>
+                        </div>
+                        <div class="download-link-arrow">→</div>
+                    </a>
+                    <a href="笔记/1_液晶物理重点.pdf" class="download-link" download>
+                        <div class="download-link-icon">📄</div>
+                        <div class="download-link-content">
+                            <div class="download-link-title">液晶物理重点</div>
+                            <div class="download-link-desc">液晶物理重点内容PDF文档</div>
+                        </div>
+                        <div class="download-link-arrow">→</div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 笔记内容区域 -->
+            <section class="note-sections">
+                <div class="note-section" id="liquid-crystal-basics">
+                    <h2>一、液晶物理基础</h2>
+                    
+                    <h3>1. 液晶的定义</h3>
+                    <p><strong>液晶（Liquid Crystal）</strong>：介于各向异性晶体和各向同性液体之间的中间相。</p>
+                    <p><strong>特点：</strong></p>
+                    <ul>
+                        <li>具有液体的流动性</li>
+                        <li>具有晶体的各向异性（anisotropy）</li>
+                    </ul>
+
+                    <h3>2. 液晶的分类</h3>
+                    <h4>① 根据形成条件分类</h4>
+                    <ul>
+                        <li><strong>热致液晶（Thermotropic）</strong>：由温度变化引起的液晶相</li>
+                        <li><strong>溶致液晶（Lyotropic）</strong>：由浓度变化引起的液晶相</li>
+                    </ul>
+
+                    <h4>② 根据结构分类</h4>
+                    <ul>
+                        <li><strong>向列相（Nematic）</strong>：分子长轴方向有序，位置无序</li>
+                        <li><strong>胆甾相（Cholesteric）</strong>：螺旋结构，具有手性</li>
+                        <li><strong>近晶相（Smectic）</strong>：层状结构，分子排列更有序</li>
+                    </ul>
+
+                    <h3>3. 序参数（Orientational Order Parameter）</h3>
+                    <p>序参数S用于描述液晶分子的取向有序程度：</p>
+                    <div class="formula">
+                        S = &lt;P₂(cos θ)&gt; = &lt;(3cos²θ - 1)/2&gt;
+                    </div>
+                    <p>其中：</p>
+                    <ul>
+                        <li>θ：分子长轴与指向矢n的夹角</li>
+                        <li>S = 1：完全有序（晶体）</li>
+                        <li>S = 0：完全无序（各向同性液体）</li>
+                        <li>0 &lt; S &lt; 1：液晶相</li>
+                    </ul>
+
+                    <h3>4. 序参数张量</h3>
+                    <p>在空间固定坐标系中，序参数张量Q定义为：</p>
+                    <div class="formula">
+                        Q<sub>αβ</sub> = S(n<sub>α</sub>n<sub>β</sub> - δ<sub>αβ</sub>/3)
+                    </div>
+                    <p>其中n是指向矢（director），S是标量序参数。</p>
+                </div>
+
+                <div class="note-section" id="frank-elasticity">
+                    <h2>二、Frank弹性理论</h2>
+                    
+                    <h3>1. Frank弹性自由能密度</h3>
+                    <p>Frank弹性自由能密度F包含三种基本形变：</p>
+                    <div class="formula">
+                        F = ½k₁₁(∇·n̂)² + ½k₂₂(n̂·∇×n̂)² + ½k₃₃(n̂×∇×n̂)²
+                    </div>
+                    <p>其中：</p>
+                    <ul>
+                        <li><strong>k₁₁</strong>：展曲弹性常数（splay）</li>
+                        <li><strong>k₂₂</strong>：扭曲弹性常数（twist）</li>
+                        <li><strong>k₃₃</strong>：弯曲弹性常数（bend）</li>
+                    </ul>
+
+                    <h3>2. 三种基本形变</h3>
+                    <ul>
+                        <li><strong>展曲（Splay）</strong>：∇·n̂ ≠ 0，分子呈扇形排列</li>
+                        <li><strong>扭曲（Twist）</strong>：n̂·∇×n̂ ≠ 0，分子螺旋排列</li>
+                        <li><strong>弯曲（Bend）</strong>：n̂×∇×n̂ ≠ 0，分子呈弧形排列</li>
+                    </ul>
+                </div>
+
+                <div class="note-section" id="freedericks-transition">
+                    <h2>三、Freedericks转变</h2>
+                    
+                    <h3>1. 基本概念</h3>
+                    <p>Freedericks转变是液晶在外场（电场或磁场）作用下发生的指向矢重新取向的临界现象。</p>
+
+                    <h3>2. 磁场诱导的Freedericks转变</h3>
+                    <h4>① 边界条件</h4>
+                    <p>假设液晶盒厚度为d，边界条件为：</p>
+                    <div class="formula">
+                        θ|z=0 = 0, &nbsp;&nbsp; θ|z=d = 0
+                    </div>
+                    <p>初始状态：n̂ = (1, 0, 0)，磁场H = (0, H, 0)</p>
+
+                    <h4>② 形变状态</h4>
+                    <p>在磁场作用下，指向矢发生倾斜：</p>
+                    <div class="formula">
+                        n̂ = (cos θ, sin θ, 0), &nbsp;&nbsp; θ = θ(z)
+                    </div>
+
+                    <h4>③ 自由能</h4>
+                    <p>单位面积自由能：</p>
+                    <div class="formula">
+                        A = ∫₀ᵈ [½k₂₂(dθ/dz)² - ½ΔχH²sin²θ] dz
+                    </div>
+                    <p>其中Δχ是磁化率各向异性。</p>
+
+                    <h4>④ 临界磁场</h4>
+                    <p>通过变分原理求解，得到临界磁场：</p>
+                    <div class="formula">
+                        H<sub>c</sub> = (π/d)√(k₂₂/Δχ)
+                    </div>
+                    <p>当H &lt; H<sub>c</sub>时，液晶保持初始排列；当H &gt; H<sub>c</sub>时，发生Freedericks转变。</p>
+
+                    <h4>⑤ 角度分布</h4>
+                    <p>在转变后，角度分布满足：</p>
+                    <div class="formula">
+                        dθ/dz = √[(ΔχH²/k₂₂)(sin²θ<sub>max</sub> - sin²θ)]
+                    </div>
+                </div>
+
+                <div class="note-section" id="stn-lcd">
+                    <h2>四、超扭曲向列相（STN）液晶显示器</h2>
+                    
+                    <h3>1. STN的基本原理</h3>
+                    <p>STN（Super Twisted Nematic）是一种扭曲角大于90°的液晶显示模式。</p>
+                    
+                    <h4>① 结构特点</h4>
+                    <ul>
+                        <li>上下基板表面处理：摩擦方向相反（±45°）</li>
+                        <li>上下基板摩擦方向与液晶分子长轴方向一致</li>
+                        <li>扭曲角通常为180°-270°</li>
+                    </ul>
+
+                    <h4>② 工作原理</h4>
+                    <ul>
+                        <li>无电场时：液晶分子呈螺旋排列，产生光学双折射效应</li>
+                        <li>有电场时：液晶分子沿电场方向排列，螺旋结构被破坏</li>
+                        <li>通过控制电场，可以实现明暗显示</li>
+                    </ul>
+
+                    <h3>2. STN的响应特性</h3>
+                    <p>STN的响应时间与扭曲角、液晶材料参数、驱动电压等因素有关。通常响应时间较长，但可以通过优化材料参数来改善。</p>
+                </div>
+
+                <div class="note-section" id="terminology">
+                    <h2>五、常用英文术语</h2>
+                    <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+                        <thead>
+                            <tr style="background: #f3f4f6;">
+                                <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left;">英文</th>
+                                <th style="padding: 0.75rem; border: 1px solid #e5e7eb; text-align: left;">中文</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Liquid Crystal</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">液晶</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Thermotropic</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">热致</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Lyotropic</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">溶致</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Nematic</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">向列相</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Cholesteric</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">胆甾相</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Smectic</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">近晶相</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Director</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">指向矢</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Order Parameter</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">序参数</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Freedericks Transition</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Freedericks转变</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Splay</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">展曲</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Twist</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">扭曲</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Bend</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">弯曲</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Anisotropic</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">各向异性</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">Isotropic</td>
+                                <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">各向同性</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 应用物理学习笔记. 持续更新中...</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/note.js"></script>
+</body>
+</html>
+

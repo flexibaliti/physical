@@ -1,0 +1,587 @@
+/* 笔记页面样式 */
+
+/* 导航栏 */
+.note-nav {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow-md);
+}
+
+.note-nav .container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-home {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.nav-home:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* 笔记内容 */
+.note-content {
+    padding: 3rem 0;
+    background: var(--bg-light);
+    min-height: calc(100vh - 200px);
+}
+
+.note-intro {
+    background: var(--bg-white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 2rem;
+}
+
+.note-intro h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.note-intro p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+/* 章节目录 */
+.note-chapters {
+    background: var(--bg-white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 2rem;
+}
+
+.note-chapters h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.chapters-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.chapter-item {
+    background: var(--bg-light);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.chapter-item:hover {
+    background: #f3f4f6;
+    transform: translateX(5px);
+    box-shadow: var(--shadow-sm);
+}
+
+.chapter-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.chapter-item p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.chapter-placeholder {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+}
+
+/* 笔记章节内容 */
+.note-sections {
+    background: var(--bg-white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+}
+
+.note-section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.note-section:last-child {
+    border-bottom: none;
+}
+
+.note-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.note-section h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.note-section h4 {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.note-section p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.note-section ul,
+.note-section ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.note-section li {
+    margin-bottom: 0.5rem;
+}
+
+.note-section code {
+    background: #f3f4f6;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    color: #e83e8c;
+}
+
+.note-section pre {
+    background: #1f2937;
+    color: #f9fafb;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.note-section pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+}
+
+.note-section blockquote {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+/* 试卷样式 */
+.exam-info {
+    background: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.exam-info p {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.exam-questions {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.exam-questions li {
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+    line-height: 1.8;
+}
+
+.exam-questions li p {
+    margin-bottom: 0.5rem;
+}
+
+.formula {
+    background: #f3f4f6;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+    font-family: 'Times New Roman', 'STSong', serif;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    border: 1px solid #e5e7eb;
+    overflow-x: auto;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.formula sub,
+.formula sup {
+    font-size: 0.8em;
+    vertical-align: baseline;
+}
+
+.formula sub {
+    bottom: -0.25em;
+}
+
+.formula sup {
+    top: -0.5em;
+}
+
+.question-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 6px;
+}
+
+.question-item h4 {
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.answer-options {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.answer-options li {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #e5e7eb;
+}
+
+.answer-options li:hover {
+    border-color: var(--primary-color);
+    background: #f0f4ff;
+}
+
+.answer-key {
+    background: #ecfdf5;
+    border-left: 4px solid #10b981;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+
+.answer-key strong {
+    color: #059669;
+}
+
+/* 表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: var(--bg-white);
+    box-shadow: var(--shadow-sm);
+}
+
+table thead {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+table th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+table td {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    color: var(--text-primary);
+}
+
+table tbody tr:nth-child(even) {
+    background: #f9fafb;
+}
+
+table tbody tr:hover {
+    background: #f0f4ff;
+    transition: background 0.2s ease;
+}
+
+/* 下载链接区域 */
+.download-section {
+    background: linear-gradient(135deg, #f0f4ff 0%, #e0e7ff 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.download-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.download-section h2::before {
+    content: "📥";
+    font-size: 1.5rem;
+}
+
+.download-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.download-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-sm);
+    border: 2px solid transparent;
+}
+
+.download-link:hover {
+    border-color: var(--primary-color);
+    transform: translateX(5px);
+    box-shadow: var(--shadow-md);
+}
+
+.download-link-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.download-link-content {
+    flex: 1;
+}
+
+.download-link-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+}
+
+.download-link-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.download-link-arrow {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    transition: transform 0.3s ease;
+}
+
+.download-link:hover .download-link-arrow {
+    transform: translateX(5px);
+    color: var(--primary-color);
+}
+
+/* 图片画廊样式 */
+.images-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.image-item {
+    background: var(--bg-white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.image-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.image-item:hover img {
+    transform: scale(1.02);
+}
+
+/* 图片模态框样式 */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 0.3s ease;
+}
+
+.image-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    animation: zoomIn 0.3s ease;
+}
+
+.image-modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.image-modal-close:hover {
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .note-nav .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-title {
+        font-size: 1.25rem;
+    }
+
+    .note-content {
+        padding: 2rem 0;
+    }
+
+    .note-intro,
+    .note-chapters,
+    .note-sections {
+        padding: 1.5rem;
+    }
+
+    .chapters-list {
+        grid-template-columns: 1fr;
+    }
+
+    .images-gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .image-modal-close {
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+    }
+
+    .download-section {
+        padding: 1.5rem;
+    }
+
+    .download-link {
+        padding: 0.75rem 1rem;
+        flex-wrap: wrap;
+    }
+
+    .download-link-icon {
+        font-size: 1.5rem;
+    }
+
+    .download-link-title {
+        font-size: 1rem;
+    }
+
+    .download-link-desc {
+        font-size: 0.85rem;
+    }
+}
+

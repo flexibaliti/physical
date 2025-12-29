@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数电 - 应用物理学习笔记</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/note.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="note-nav">
+        <div class="container">
+            <a href="../index.html" class="nav-home">← 返回首页</a>
+            <h1 class="nav-title">数电</h1>
+        </div>
+    </nav>
+
+    <!-- 笔记内容 -->
+    <main class="note-content">
+        <div class="container">
+            <!-- 科目介绍 -->
+            <section class="note-intro">
+                <h2>课程简介</h2>
+                <p>数字电子技术是研究数字电路分析与设计的基础课程。主要学习数字逻辑基础、组合逻辑电路、时序逻辑电路、存储器、数模转换等内容。本页面包含数字电子技术的概念题集，用于巩固和复习知识点。</p>
+            </section>
+
+            <!-- 下载链接区域 -->
+            <section class="download-section">
+                <h2>笔记下载</h2>
+                <div class="download-links">
+                    <a href="笔记/电工模电数电.pdf" class="download-link" download>
+                        <div class="download-link-icon">📄</div>
+                        <div class="download-link-content">
+                            <div class="download-link-title">电工模电数电概念题集</div>
+                            <div class="download-link-desc">包含电工技术、模拟电子技术、数字电子技术习题集（约1000题）</div>
+                        </div>
+                        <div class="download-link-arrow">→</div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- 笔记内容区域 -->
+            <section class="note-sections">
+                <div class="note-section" id="chapter-9">
+                    <h2>第9章 数-模和模-数转换</h2>
+                    
+                    <h3>一、判断题</h3>
+                    <div class="question-item">
+                        <ol class="exam-questions">
+                            <li>若分辨率用D/A转换器的最小输出电压与最大输出电压之比来表示，则8位D/A转换器的分辨率为1/256。</li>
+                            <li>D/A转换器是把数字量变成模拟量。</li>
+                            <li>在进行A/D转换时，取样电压必须为某个规定最小数量单位的整数倍。</li>
+                            <li>A/D转换器量化方法一般有两种形式：舍尾取整法、四舍五入法。</li>
+                            <li>A/D转换器采样过程要满足采样定理，理论上采样频率要≥2倍输入信号的最高频率。</li>
+                            <li>A/D转换器工作时的取样频率越快越好。</li>
+                            <li>一个N位逐次逼近型A/D转换器完成一次转换要进行N次比较，需要N+4个时钟脉冲。</li>
+                            <li>并联比较型和逐次渐进型A/D转换器都属于直接A/D转换器，并联比较型的最大优点是转换速度快。</li>
+                        </ol>
+                        <div class="answer-key">
+                            <p><strong>答案：</strong>√ √ √ √ √ × × √</p>
+                        </div>
+                    </div>
+
+                    <h3>二、填空题</h3>
+                    <div class="question-item">
+                        <ol class="exam-questions">
+                            <li>将模拟量转换成数字量，采用（<strong>模数转换器</strong>）转换器，将数字量转换成模拟量，采用（<strong>数模转换器</strong>）转换器。</li>
+                            <li>（<strong>转换精度</strong>）和（<strong>转换速度</strong>）是衡量A/D转换器和D/A转换器性能优劣的主要标志。</li>
+                            <li>将模拟信号转化为数字信号，需要经过（<strong>采样</strong>）、（<strong>保持</strong>）、（<strong>量化</strong>）、（<strong>编码</strong>）四个过程。</li>
+                            <li>对数模转换过程中的取样/保持电路，若f<sub>s</sub>是取样频率，f<sub>imax</sub>是输入信号的最大频率，这两者关系必需满足（<strong>f<sub>s</sub> = (3~5) × f<sub>imax</sub></strong>）。</li>
+                            <li>一个输出为10位的逐次渐进型A/D转换器完成一次转换需要（<strong>10</strong>）个时钟周期的时间。</li>
+                            <li>某D/A转换器输出的最小分辨电压约为5mV，最大满度输出电压为10V，该转换器输入二进制数字量的位数应为（<strong>11</strong>）。</li>
+                            <li>已知被转换的信号的上限截止频率为10kHz，则A/D转换器的采样频率应高于（<strong>20kHz</strong>）；完成一次转换所用的时间应小于（<strong>50μs</strong>）。</li>
+                            <li>某8位A/D转换器输入电压范围为0~+10V，当输入电压为4.48V和7.81V时，它输出的二进制数分别为（<strong>01110011</strong>）和（<strong>11001000</strong>）。</li>
+                            <li>若A/D转换器的输出为10位二进制数，最大输入信号为5V，那么这个转换器的分辨率为（<strong>4.88mV</strong>）。</li>
+                            <li>8位D/A转换器当输入数字量只有最高位为高电平时输出电压为5V，若只有最低位为高电平，则输出电压为（<strong>39mV</strong>）。若输入为10001000，则输出电压为（<strong>5.31V</strong>）。</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="note-section" id="images-section">
+                    <h2>数电图片资料</h2>
+                    <div class="images-gallery">
+                        <div class="image-item">
+                            <img src="笔记/数电图片/微信图片_20251229151752.jpg" alt="数电图片1" />
+                        </div>
+                        <div class="image-item">
+                            <img src="笔记/数电图片/微信图片_20251229151716.jpg" alt="数电图片2" />
+                        </div>
+                        <div class="image-item">
+                            <img src="笔记/数电图片/微信图片_20251229151713.jpg" alt="数电图片3" />
+                        </div>
+                        <div class="image-item">
+                            <img src="笔记/数电图片/微信图片_20251229151710.jpg" alt="数电图片4" />
+                        </div>
+                        <div class="image-item">
+                            <img src="笔记/数电图片/微信图片_20251229151701.jpg" alt="数电图片5" />
+                        </div>
+                        <div class="image-item">
+                            <img src="笔记/数电图片/微信图片_20251229151654.jpg" alt="数电图片6" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="note-section" id="chapters-overview">
+                    <h2>章节目录</h2>
+                    <div class="chapters-list">
+                        <div class="chapter-item">
+                            <h3>第1章 数字逻辑概论</h3>
+                            <p>数字逻辑基础概念</p>
+                        </div>
+                        <div class="chapter-item">
+                            <h3>第2章 逻辑代数与硬件描述语言基础</h3>
+                            <p>逻辑运算与描述语言</p>
+                        </div>
+                        <div class="chapter-item">
+                            <h3>第3章 逻辑门电路</h3>
+                            <p>基本逻辑门电路</p>
+                        </div>
+                        <div class="chapter-item">
+                            <h3>第4章 组合逻辑电路</h3>
+                            <p>组合电路分析与设计</p>
+                        </div>
+                        <div class="chapter-item">
+                            <h3>第5章 锁存器和触发器</h3>
+                            <p>时序电路基本单元</p>
+                        </div>
+                        <div class="chapter-item">
+                            <h3>第6章 时序逻辑电路</h3>
+                            <p>时序电路分析与设计</p>
+                        </div>
+                        <div class="chapter-item">
+                            <h3>第7章 存储器、复杂可编程逻辑器件</h3>
+                            <p>存储器件与PLD</p>
+                        </div>
+                        <div class="chapter-item">
+                            <h3>第8章 脉冲波形的产生和整形</h3>
+                            <p>脉冲电路</p>
+                        </div>
+                        <div class="chapter-item">
+                            <h3>第9章 数-模和模-数转换</h3>
+                            <p>A/D与D/A转换</p>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.9rem;">注：更多章节的概念题正在整理中，敬请期待...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 应用物理学习笔记. 持续更新中...</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/note.js"></script>
+</body>
+</html>
+
