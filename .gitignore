@@ -14,5 +14,9 @@ desktop.ini
 *.tmp
 *.log
 
+# Cloudflare Workers 配置文件（Pages 不需要）
+wrangler.toml
+
 # 不需要忽略PDF和图片文件，这些是项目资源
+
 
