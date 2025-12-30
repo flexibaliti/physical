@@ -22,25 +22,210 @@
             <!-- 科目介绍 -->
             <section class="note-intro">
                 <h2>课程简介</h2>
-                <p>课程内容正在整理中，敬请期待...</p>
+                <p>液晶器件工艺与材料是研究液晶显示器件制造工艺和材料特性的课程。主要学习液晶盒的工作原理、玻璃基板性能、阵列工艺、成盒工艺、模块工艺、彩膜工艺等内容。</p>
             </section>
 
-            <!-- 章节目录 -->
-            <section class="note-chapters">
-                <h2>章节目录</h2>
-                <div class="chapters-list" id="chaptersList">
-                    <div class="chapter-placeholder">
-                        <p>章节内容正在整理中...</p>
-                    </div>
+            <!-- 下载链接区域 -->
+            <section class="download-section">
+                <h2>资料下载</h2>
+                <div class="download-links">
+                    <a href="笔记/液晶器件工艺与材料习题.pdf" class="download-link" download>
+                        <div class="download-link-icon">📄</div>
+                        <div class="download-link-content">
+                            <div class="download-link-title">液晶器件工艺与材料习题</div>
+                            <div class="download-link-desc">液晶器件工艺与材料习题集（PDF文档）</div>
+                        </div>
+                        <div class="download-link-arrow">→</div>
+                    </a>
                 </div>
             </section>
 
             <!-- 笔记内容区域 -->
             <section class="note-sections">
-                <div id="noteSections">
-                    <!-- 笔记内容将在这里动态加载 -->
+                <div class="note-section" id="exercises">
+                    <h2>液晶器件工艺与材料习题</h2>
+                    
+                    <h3>一、绪论</h3>
+                    <ol class="exam-questions">
+                        <li>
+                            <p><strong>什么是正性液晶，在电场下分子如何排列？</strong></p>
+                            <p>正性液晶的介电各向异性 ε<sub>∥</sub> &gt; ε<sub>⊥</sub>，Δε &gt; 0，在电场下液晶分子长轴方向与外电场平行。</p>
+                        </li>
+                        <li>
+                            <p><strong>什么是负性液晶，在电场下分子如何排列？</strong></p>
+                            <p>负性液晶的介电各向异性 ε<sub>∥</sub> &lt; ε<sub>⊥</sub>，Δε &lt; 0，在电场下液晶分子长轴方向与外电场垂直。</p>
+                        </li>
+                        <li>
+                            <p><strong>以垂直排列液晶盒为例，叙述液晶盒的工作原理。</strong></p>
+                            <p>垂直排列向列相负性液晶盒，在不加电时液晶分子垂直基板排列，对入射的偏振光不发生双折射，出射光偏振方向垂直于上偏振片而无法透过，显示黑色；加电时，一方面在取向作用下液晶分子要垂直基板排列，另一方面液晶分子要垂直于电场、平行于基板排列，这样的双重作用下，内部的液晶分子长轴发生倾斜，对入射光产生双折射，输出椭圆偏振光。可部分透过上偏振片，显示颜色。</p>
+                        </li>
+                        <li>
+                            <p><strong>以 TN 液晶盒为例，叙述液晶盒的工作原理。</strong></p>
+                            <p>TN 液晶盒是在涂布了透明电极的两块玻璃基板中间，夹入厚几微米的具有正介电各向异性的向列相液晶，并对玻璃内表面处理，使得不加电状态下液晶分子长轴在上下两块基板之间连续扭曲 90° 排列。液晶的扭矩远大于可见光波长，垂直入射到玻璃基片上的线偏振光在通过液晶盒过程中，偏振方向将沿着液晶分子扭曲方向转过 90°，在两片正交偏振片之间就可以透光。外加电场时，液晶分子长轴垂直于基板排列，入射偏振光不再旋转，无法通过第二个偏振片，不透光。</p>
+                        </li>
+                        <li>
+                            <p><strong>阵列工艺主要包括哪三个步骤？</strong></p>
+                            <p>阵列工艺主要包括薄膜（thin film）、光刻（track&photo）、刻蚀（etch）三个步骤。</p>
+                        </li>
+                        <li>
+                            <p><strong>成盒工艺主要包括哪四个步骤？</strong></p>
+                            <p>成盒工艺主要包括取向层涂覆（PI coating）、摩擦（rubbing）、对盒（Ass'y）、切割（cutting）四个步骤。</p>
+                        </li>
+                        <li>
+                            <p><strong>模块工艺主要包括哪四个步骤？</strong></p>
+                            <p>模块工艺主要包括偏振片贴附（POL）、外部引线连接（OLB）、背光源装配（Ass'y）、老化性测试（Aging）四个步骤。</p>
+                        </li>
+                        <li>
+                            <p><strong>叙述液晶滴注技术和液晶注入技术，并叙述他们的优缺点。</strong></p>
+                            <p>液晶灌入技术是在真空环境下将液晶利用毛细现象的原理、由内外压力差注入到液晶盒内，然后再使用封口材料将注入口封堵；液晶滴注技术是真空环境下将液晶滴注到玻璃基板上，再封装成液晶盒。优缺点：传统液晶注入技术使用液晶多、存在浪费，而且在用于大尺寸液晶盒灌注时会残留真空气泡，灌注时间长。液晶滴注技术可以很好地解决大尺寸液晶屏灌注问题，而且液晶使用量少。</p>
+                        </li>
+                    </ol>
+
+                    <h3>二、玻璃及其性能</h3>
+                    <ol class="exam-questions">
+                        <li>
+                            <p><strong>有碱玻璃和无碱玻璃的区别？</strong></p>
+                            <p>有碱玻璃中含有碱金属离子，无碱玻璃中几乎不含碱金属离子。</p>
+                        </li>
+                        <li>
+                            <p><strong>为什么 TFT-LCD 用玻璃基板要求是采用无碱玻璃？</strong></p>
+                            <p>在 TFT-LCD 中，玻璃中的碱金属离子会影响薄膜晶体管栅极电压的稳定性，在高温时一价加金属会从玻璃内部向表面溢出，造成印刷电路的故障，因此基板的制造必须使用无碱配方，不能含有氧化钠和氧化钾成分。</p>
+                        </li>
+                        <li>
+                            <p><strong>ITO 玻璃的主要成分是什么？</strong></p>
+                            <p>ITO 玻璃是覆盖有氧化铟锡导电层的玻璃，主要成分为氧化铟 In<sub>2</sub>O<sub>3</sub>、锡、二氧化硅。</p>
+                        </li>
+                        <li>
+                            <p><strong>TFT 用玻璃的应变点至少要在多少度以上？</strong></p>
+                            <p>TFT 用玻璃的应变点至少在 650°C 以上。</p>
+                        </li>
+                        <li>
+                            <p><strong>为什么基板玻璃对化学稳定性的要求几乎是玻璃中最严格的？</strong></p>
+                            <p>因为基板玻璃要求必须能够经受显示器制造过程中的各种化学处理工序。</p>
+                        </li>
+                        <li>
+                            <p><strong>基板玻璃的制造工艺有哪几种？各有什么特点？</strong></p>
+                            <p>基板玻璃的制造工艺主要有浮法、流孔下引法、溢流熔融法三种。浮法工艺是利用液态锡与熔融玻璃的密度差，使玻璃在表面张力和重力的作用下自然摊平，特点在成型不需克服重力、充分发挥玻璃表面张力作用、横向温度均匀、产能高、易于扩大尺寸；流孔下引法是使玻璃在重力作用下从流孔中流出，特点是可以生产超薄玻璃；溢流熔融法是使玻璃从溢流槽中溢出，特点是可以生产高质量的超薄玻璃。</p>
+                        </li>
+                    </ol>
+
+                    <h3>十五、阵列工艺</h3>
+                    <ol class="exam-questions">
+                        <li>
+                            <p><strong>阵列工艺中溅射的目的。</strong></p>
+                            <p>溅射的目的是形成金属膜层，包括 gate 层、源/漏极层和像素层（ITO）。</p>
+                        </li>
+                        <li>
+                            <p><strong>阵列工艺中等离子体增强化学气相沉积的目的。</strong></p>
+                            <p>PECVD 的目的是形成绝缘膜层、a-Si 层、n⁺a-Si 层、SiNx 保护层。</p>
+                        </li>
+                        <li>
+                            <p><strong>阵列工艺中湿刻的目的是什么？采用湿刻工艺的有哪些层？</strong></p>
+                            <p>湿刻的目的是刻蚀掉未被光刻胶掩盖的金属膜，采用湿刻工艺的有 gate 层、源/漏极层和像素层（ITO），主要刻蚀对象为金属膜。</p>
+                        </li>
+                        <li>
+                            <p><strong>阵列工艺中干刻的目的是什么？采用干刻工艺的有哪些层？</strong></p>
+                            <p>干刻的目的是刻蚀掉未被光刻胶掩盖的非金属膜，形成 TFT 基板的各种图案，采用干刻工艺的是硅层。</p>
+                        </li>
+                    </ol>
+
+                    <div class="formula" style="margin-top: 2rem;">
+                        <h3>阵列工艺流程表</h3>
+                        <table style="width: 100%; margin-top: 1rem;">
+                            <thead>
+                                <tr style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+                                    <th style="padding: 0.75rem; text-align: left;">序号</th>
+                                    <th style="padding: 0.75rem; text-align: left;">工艺名称</th>
+                                    <th style="padding: 0.75rem; text-align: left;">工艺目的</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">1</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">洗净</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">清洁基板表面，防止成膜不良</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">2</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">溅射（SPUTTER）</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">成Gate膜、D/S膜和Pixel膜</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">3</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">P-CVD</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">成a-Si膜和SiNx膜</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">4</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">PR/曝光</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">形成与MASK图案相一致的光刻胶图案</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">5</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">湿刻（WE）</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">刻蚀掉未被光刻胶掩蔽的金属膜</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">6</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">干刻（DE）</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">刻蚀掉未被光刻胶掩蔽的非金属膜</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">7</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">剥离</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">去掉残余的光刻胶</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">8</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">退火</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">修复晶体损伤，改善晶体性质</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">9</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">检查修复</td>
+                                    <td style="padding: 0.75rem; border: 1px solid #e5e7eb;">监控产品不良，修复不良</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>十六、彩膜工艺</h3>
+                    <ol class="exam-questions">
+                        <li>
+                            <p><strong>彩膜玻璃基板上主要有哪些膜层？简述每一膜层的作用。</strong></p>
+                            <p>玻璃衬底，作为衬底材料；黑矩阵，用于遮光；红绿蓝三基色色阻层，用于对透射光着色；平坦层，使表面平坦化，同时作为着色层的保护层；ITO 层，驱动液晶的透明电极膜；柱状隔垫物，保证盒厚均一。</p>
+                        </li>
+                        <li>
+                            <p><strong>彩膜制作工艺流程。</strong></p>
+                            <p>在玻璃基板上涂布黑矩阵材料，经过曝光和显影形成了黑矩阵图案；然后涂布一层色阻，经过曝光和显影即在基板形成了一层色阻图案，接着再涂布另外一层色阻，经过同样的工艺步骤，最后完成 RGB 三种色阻的图案；然后涂布一层 OC，经过膜层热固化实现平坦效果，同时防止色阻层金属离子进入液晶；用溅射法在上面沉积一层 ITO 透明导电电极；涂布一层 PS 光阻，经过曝光和显影后形成 PS 图案。以上完成了彩膜基板的工艺流程。</p>
+                        </li>
+                        <li>
+                            <p><strong>黑矩阵的主要作用。</strong></p>
+                            <p>遮蔽像素区域（开口部分）之外的背光源的漏光；防止相邻RGB亚像素混色，提高显示对比度；防止光线照射TFT器件的a-Si层而增加漏电流；防止背景光的写入造成对比度低，可明显提高对比度。</p>
+                        </li>
+                        <li>
+                            <p><strong>色阻由什么组成？起什么作用？</strong></p>
+                            <p>色阻由红、绿、蓝三基色色阻排列组成，作用是将背光源的白光过滤为三原色，配合TFT改变其比例而形成多彩色。</p>
+                        </li>
+                        <li>
+                            <p><strong>叙述彩膜制造过程中的涂布工艺过程。</strong></p>
+                            <p>彩膜制造中的涂布工艺，使用旋涂、刮涂等方法将材料均匀分布在基板上形成薄膜，经过曝光和显影，残留部分在基板上形成所需的图案。使用涂布工艺的有黑矩阵层、色阻层、平坦层（无曝光显影）、PS层。</p>
+                        </li>
+                    </ol>
+
+                    <h3>附：混合液晶公式</h3>
+                    <div class="formula">
+                        <p>清亮点：T<sub>C</sub> = Σ<sub>i</sub>x<sub>i</sub>T<sub>Ci</sub></p>
+                        <p>熔点：(T<sub>mp</sub>)<sub>i</sub> = ΔH<sub>i</sub> / (ΔH<sub>i</sub>/T<sub>mi</sub> - R·ln x<sub>i</sub>)</p>
+                        <p>粘滞系数：ln η<sub>i</sub> = Σ<sub>i</sub>x<sub>i</sub>ln η<sub>i</sub></p>
+                        <p>弹性常数：√K<sub>aa</sub> = Σ<sub>i</sub>x<sub>i</sub>√K<sub>aai</sub></p>
+                        <p>胆甾相液晶螺距：1/P = Σ<sub>i</sub>x<sub>i</sub>/P<sub>i</sub></p>
+                    </div>
+                    <p style="margin-top: 1rem; color: var(--text-secondary);">式中 x<sub>i</sub> 是第 i 种液晶的摩尔比，ΔH<sub>i</sub> 是第 i 种液晶的相变焓，R 是气体常数 R = 1.987 cal·mol⁻¹·K⁻¹</p>
                 </div>
             </section>
+        </div>
+    </main>
         </div>
     </main>
 
@@ -54,5 +239,8 @@
     <script src="../scripts/note.js"></script>
 </body>
 </html>
+
+
+
 
 
